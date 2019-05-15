@@ -24,7 +24,6 @@ public class Default {
 "DROP TABLE COMPANY; \n" +
 "DROP TABLE CALENDAR";
     }
-
     String CREATE() {
 	return "/*--------CREATE TABLE--------*/\n" +
 "/*--------словари--------*/\n" +
@@ -198,8 +197,7 @@ public class Default {
 "ALTER TABLE VACATION ADD CONSTRAINT VAC_USR_fk FOREIGN KEY (USR_ID) REFERENCES USR(ID);\n" +
 "ALTER TABLE SICK ADD CONSTRAINT SICK_USR_fk FOREIGN KEY (USR_ID) REFERENCES USR(ID);\n" +
 "ALTER TABLE ABSENCE ADD CONSTRAINT ABS_USR_fk FOREIGN KEY (USR_ID) REFERENCES USR(ID)";
-    }
-		
+    }		
     String INSERT() {
 	return "/*TEST DATA*/\n" +
 "/*--------словари--------*/\n" +

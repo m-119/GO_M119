@@ -25,7 +25,7 @@ public class Test extends HttpServlet {
 	//calendar_day - день
 	//calendar_hours - часы
 	//company_id - id компании
-	//company - название коммпании
+	//company - название компании
 	//departament_id - id отдела
 	//departament - название отдела
 	//title_id - id должности
@@ -44,7 +44,7 @@ public class Test extends HttpServlet {
 	//usr_firstName - имя сотрудника
 	//usr_middleName - отчество сотрудника
 	//usr_birth - дата рождения сотрудника
-	//rtc_hours - время на учлугу
+	//rtc_hours - время на уcлугу
 	//family_child
 	//family_parent
 	//family_name
