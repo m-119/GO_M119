@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+}
+table {
+  width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #999;
+}
+
+.pressedTime {
+    background: #4b75a4;
+    color: #ffffff;
+}
+
+td {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+day {
+	
+	font-size: 20pt;
+	
+}
+
+hours {
+	font-size: 11pt;
+	color: #bbaeff;
+}
+
+.context {
+  height: 400px;
+  background: red;
+  font-size: 0; /*для отображения текста в блоках не забудьте задать размер шрифта им.*/
+}
+.left, .right {
+  display: inline-block; /* можно использовать свойство float */
+  vertical-align: top; 
+}
+.left {
+  width: 400px;
+  outline: 1px solid green;
+  height: 100%;
+  font-size: 14px;
+  position: fixed;
+}
+
+.right {
+  width: calc(100% - 400px); /* расчет ширины */
+  outline: 1px solid blue;
+  height: 100%;
+  font-size: 14px;
+  float: right;
+  overflow: auto;
+}

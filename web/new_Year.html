@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		
+        <title>RESET Year</title>
+		<html xmlns="https://www.w3.org/1999/xhtml">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		
+		<meta http-equiv="Cache-Control" content="no-cache">
+		
+		<link rel="stylesheet" href="style.css">
+		
+		<script type="text/javascript" src="jquery-3.4.0.min.js"></script>
+		<script src="jquery.serializeToJSON.js"></script>
+		<script src="ajax.js"></script>
+		<script src="calendar.js"></script>
+    </head>
+    <body>
+        <form method="post" action="" id="ajax_form">
+		<p><b>Установка данных года в соответствии с параметрами по-умолчанию</b></p>
+		<b>ГОД: </b><input type="number"  name="year" min="2000" max="2050" value="2020"><p>
+		  <b>ПН: </b><input type="time" name="mon" value="08:15"><Br><p>
+		  <b>ВТ: </b><input type="time" name="tue" value="08:15"><Br><p>
+		  <b>СР: </b><input type="time" name="wed" value="08:15"><Br><p>
+		  <b>ЧТ: </b><input type="time" name="thu" value="08:15"><Br><p>
+		  <b>ПТ: </b><input type="time" name="fri" value="07:00"><Br><p>
+		  <b>СБ: </b><input type="time" name="sat" value="00:00"><Br><p>
+		  <b>ВС: </b><input type="time" name="sun" value="00:00"><Br><p>
+		  <p><input type="radio" name="action" value="clear Year">ДА
+		  <input type="radio" name="action" value="none" checked="checked">НЕТ<Br><p>
+          <input type="button" id="btn" value="Отправить" /><span id="result_form" style="color: red;"></span>
+            </p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		
+        <title>сотрудник</title>
+		<html xmlns="https://www.w3.org/1999/xhtml">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		
+		<meta http-equiv="Cache-Control" content="no-cache">
+		
+		<link rel="stylesheet" href="style.css">
+		
+		<script type="text/javascript" src="jquery-3.4.0.min.js"></script>
+		<script src="jquery.serializeToJSON.js"></script>
+		<script src="ajax.js"></script>
+		<script src="calendar.js"></script>
+		<script src="linkelements.js"></script>
+		
+    </head>
+    <body>
+        <form method="post" action="" id="ajax_form">
+		<input type="number" value="" disabled>
+            <p>
+                <label for="lastname">Фамилия:</label>
+                <input type="text" id="lastname" name="lastname"/>
+            </p>
+            <p>
+                <label for="firstname">Имя:</label>
+                <input type="text" id="firstname" name="firstname"/>
+            </p>
+            <p>
+                <label for="middlename">Отчество: </label>
+                <input type="text" id="middlename" name="middlename"/>
+            </p>
+            <p>
+                <label for="birthdate">Дата рождения: </label>
+                <input type="date" id="birthdate" name="birthdate"/>
+            </p>
+			<!--уровень-->
+			 <p>
+                <select name="grade" id="ID-GRADE" style="width: 502px;">
+				<option selected disabled>Grade</option>
+				<option value="1">L1</option>
+			   </select>
+            </p>
+			<!--отдел-->
+			<p>
+                <select name="department" id="ID-DEPARTMENT" style="width: 502px;">
+				<option selected disabled>Отдел</option>
+				<option value="1">первый департамент</option>
+			   </select>
+            </p>
+			<!--должность-->
+			<p>
+                <select size="1" name="tittle" id="DEPARTMENT_ID-ID-TITLE"  style="width: 502px;">
+				<option selected disabled>Должность</option>
+				<option title="1" value="1">первая должность</option>
+				<option title="1" value="2">вторая должность первого отдела</option>
+			   </select>
+            </p>
+			<p><input type="radio" name="action" value="upload User">Добавить сотрудника
+			<input type="radio" name="action" value="save User">Редактировать сотрудника
+		  <input type="radio" name="action" value="none" checked="checked">НЕТ<Br><p>
+            <p>
+                <input type="button" id="btn" value="Отправить" /><span id="result_form" style="color: red;"></span>
+            </p>
+        </form>
+    </body>
+</html>

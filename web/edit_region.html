@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		
+        <title>регион</title>
+		<html xmlns="https://www.w3.org/1999/xhtml">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		
+		<meta http-equiv="Cache-Control" content="no-cache">
+		
+		<link rel="stylesheet" href="style.css">
+		
+		<script type="text/javascript" src="jquery-3.4.0.min.js"></script>
+		<script src="jquery.serializeToJSON.js"></script>
+		<script src="ajax.js"></script>
+		<script src="calendar.js"></script>
+		<script src="linkelements.js"></script>
+    </head>
+    <body>
+	<form method="post" action="" id="ajax_form">
+	
+	  <input list="ID-REGION-TIME_ZONE" id="region" name="region">
+	  <input type="hidden" name="region">
+		<datalist id="ID-REGION-TIME_ZONE">
+			<option id="1" time_zone="3">Санкт-Петербург</option>
+			<option id="2" time_zone="3">Москва</option>
+			<option id="3" time_zone="6">Омск</option>
+		</datalist>
+
+	   
+	   
+	   <input type="number"
+	    name = "time_zone"
+		id = "time_zone"
+		min="-12"
+		max="12"
+		step="1"
+		value="3">
+			<p><input type="radio" name="action" value="upload Region">Добавить регион
+			
+		  <input type="radio" name="action" value="none" checked="checked">НЕТ<Br><p>
+            <p>
+                <input type="button" id="btn" value="Отправить" /><span id="result_form" style="color: red;"></span>
+				</form>
+            </p>
+        </form>
+    </body>
+</html>
